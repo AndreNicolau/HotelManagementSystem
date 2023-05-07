@@ -16,8 +16,10 @@ namespace HotelManagementSystem
         public Clients()
         {
             InitializeComponent();
-
             LoadClients();
+
+            // Hide first column from clients datagridview
+            dgvClients.Columns[0].Visible = false;
         }
 
         public void LoadClients()
@@ -31,7 +33,7 @@ namespace HotelManagementSystem
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
 
-                dataGridView1.DataSource = dataTable;
+                dgvClients.DataSource = dataTable;
             }
             catch (Exception ex)
             {

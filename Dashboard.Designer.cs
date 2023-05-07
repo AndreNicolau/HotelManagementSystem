@@ -34,15 +34,17 @@
             this.clients1 = new HotelManagementSystem.Clients();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.rooms1 = new HotelManagementSystem.Rooms();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(13, 9);
+            this.lblUsername.Location = new System.Drawing.Point(4, 0);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(99, 25);
@@ -53,7 +55,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 37);
+            this.tabControl1.Location = new System.Drawing.Point(3, 67);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1223, 495);
@@ -72,10 +74,11 @@
             // 
             // clients1
             // 
-            this.clients1.Location = new System.Drawing.Point(26, 20);
+            this.clients1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clients1.Location = new System.Drawing.Point(3, 3);
             this.clients1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.clients1.Name = "clients1";
-            this.clients1.Size = new System.Drawing.Size(1182, 397);
+            this.clients1.Size = new System.Drawing.Size(1209, 451);
             this.clients1.TabIndex = 2;
             // 
             // tabPage2
@@ -91,19 +94,34 @@
             // 
             // rooms1
             // 
-            this.rooms1.Location = new System.Drawing.Point(7, 5);
+            this.rooms1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rooms1.Location = new System.Drawing.Point(3, 3);
             this.rooms1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rooms1.Name = "rooms1";
-            this.rooms1.Size = new System.Drawing.Size(1204, 438);
+            this.rooms1.Size = new System.Drawing.Size(1209, 451);
             this.rooms1.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.lblUsername, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tabControl1, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1238, 643);
+            this.tableLayoutPanel1.TabIndex = 4;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1247, 529);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.lblUsername);
+            this.ClientSize = new System.Drawing.Size(1238, 643);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard";
@@ -112,8 +130,9 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -124,5 +143,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private Rooms rooms1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
