@@ -10,7 +10,7 @@ namespace HotelManagementSystem
         private DataTable usersDataTable = new DataTable();
 
         private string connectionString = Properties.Resources.connectionString;
-        
+
         public Login()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace HotelManagementSystem
                  cmbUsername.ValueMember = "FirstName" + "LastName";
                 */
 
-                
+
 
             }
             catch (Exception ex)
