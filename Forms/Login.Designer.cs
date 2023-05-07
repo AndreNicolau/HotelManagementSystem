@@ -32,39 +32,39 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.ChbShowPassword = new System.Windows.Forms.CheckBox();
-            this.cmbUsername = new System.Windows.Forms.ComboBox();
             this.lblPassword = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblUser
             // 
             this.lblUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(127, 43);
+            this.lblUser.Location = new System.Drawing.Point(171, 42);
             this.lblUser.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(64, 29);
-            this.lblUser.TabIndex = 0;
+            this.lblUser.TabIndex = 5;
             this.lblUser.Text = "User";
             // 
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPassword.Location = new System.Drawing.Point(127, 153);
+            this.txtPassword.Location = new System.Drawing.Point(171, 152);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(216, 34);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
             this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLogin.Location = new System.Drawing.Point(127, 242);
+            this.btnLogin.Location = new System.Drawing.Point(171, 241);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(214, 45);
-            this.btnLogin.TabIndex = 2;
+            this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -73,7 +73,7 @@
             // 
             this.ChbShowPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ChbShowPassword.AutoSize = true;
-            this.ChbShowPassword.Location = new System.Drawing.Point(127, 198);
+            this.ChbShowPassword.Location = new System.Drawing.Point(171, 197);
             this.ChbShowPassword.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.ChbShowPassword.Name = "ChbShowPassword";
             this.ChbShowPassword.Size = new System.Drawing.Size(209, 33);
@@ -82,39 +82,35 @@
             this.ChbShowPassword.UseVisualStyleBackColor = true;
             this.ChbShowPassword.CheckedChanged += new System.EventHandler(this.chbShowPassword_CheckedChanged);
             // 
-            // cmbUsername
-            // 
-            this.cmbUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbUsername.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmbUsername.FormattingEnabled = true;
-            this.cmbUsername.Location = new System.Drawing.Point(127, 78);
-            this.cmbUsername.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.cmbUsername.Name = "cmbUsername";
-            this.cmbUsername.Size = new System.Drawing.Size(216, 37);
-            this.cmbUsername.Sorted = true;
-            this.cmbUsername.TabIndex = 4;
-            // 
             // lblPassword
             // 
             this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(127, 118);
+            this.lblPassword.Location = new System.Drawing.Point(171, 117);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(120, 29);
-            this.lblPassword.TabIndex = 5;
+            this.lblPassword.TabIndex = 6;
             this.lblPassword.Text = "Password";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUsername.Location = new System.Drawing.Point(171, 80);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(216, 34);
+            this.txtUsername.TabIndex = 1;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 334);
+            this.ClientSize = new System.Drawing.Size(559, 395);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.ChbShowPassword);
-            this.Controls.Add(this.cmbUsername);
             this.Controls.Add(this.btnLogin);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -133,8 +129,8 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.CheckBox ChbShowPassword;
-        private System.Windows.Forms.ComboBox cmbUsername;
         private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtUsername;
     }
 }
 

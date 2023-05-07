@@ -12,11 +12,16 @@ namespace HotelManagementSystem
 {
     public partial class Dashboard : Form
     {
-        public Dashboard(string userInfo)
+        public Dashboard(string userInfo, string userGroup)
         {
             InitializeComponent();
 
             lblUsername.Text = userInfo;
+
+            if (userGroup != "Admin")
+            {
+                tabControl.TabPages.Remove(tpEmployess);
+            }
         }
     }
 }
