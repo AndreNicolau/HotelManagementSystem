@@ -12,11 +12,11 @@ namespace HotelManagementSystem
 {
     public partial class Dashboard : Form
     {
-        public Dashboard(string username)
+        public Dashboard(string userInfo)
         {
             InitializeComponent();
 
-            lblUsername.Text = username;
+            lblUsername.Text = userInfo;
         }
     }
 }

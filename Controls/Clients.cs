@@ -18,7 +18,7 @@ namespace HotelManagementSystem
             InitializeComponent();
             LoadClients();
 
-            // Hide first column from clients datagridview
+            // Hide first column (ClientID) from clients datagridview
             dgvClients.Columns[0].Visible = false;
         }
 

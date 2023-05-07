@@ -7,10 +7,10 @@ namespace HotelManagementSystem
 {
     public partial class Login : Form
     {
-        private string connectionString = Properties.Resources.connectionString;
-        public string username;
-
         private DataTable usersDataTable = new DataTable();
+
+        private string connectionString = Properties.Resources.connectionString;
+        
         public Login()
         {
             InitializeComponent();
@@ -28,10 +28,14 @@ namespace HotelManagementSystem
                 MySqlDataAdapter adapter = new MySqlDataAdapter(fetchUsersCommand, connection);
 
                 adapter.Fill(usersDataTable);
+                /*
+                 cmbUsername.DataSource = usersDataTable;
+                 cmbUsername.DisplayMember = "FirstName" + "LastName";
+                 cmbUsername.ValueMember = "FirstName" + "LastName";
+                */
 
-                cmbUsername.DataSource = usersDataTable;
-                cmbUsername.DisplayMember = "Username";
-                cmbUsername.ValueMember = "Username";
+                
+
             }
             catch (Exception ex)
             {
@@ -59,16 +63,16 @@ namespace HotelManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string userPassword = usersDataTable.Rows[cmbUsername.SelectedIndex][4].ToString();
+            string password = usersDataTable.Rows[cmbUsername.SelectedIndex][4].ToString();
 
-            if (txtPassword.Text == userPassword)
+            if (txtPassword.Text == password)
             {
                 string firstName = usersDataTable.Rows[cmbUsername.SelectedIndex][1].ToString();
                 string lastName = usersDataTable.Rows[cmbUsername.SelectedIndex][2].ToString();
-                string username = $"Utilizador: {firstName} {lastName} ({cmbUsername.Text})";
+                string userInfo = $"Utilizador: {firstName} {lastName} ({cmbUsername.Text})";
 
-                Dashboard dashboard = new Dashboard(username);
-                dashboard.ShowDialog(); 
+                Dashboard dashboard = new Dashboard(userInfo);
+                dashboard.ShowDialog();
                 this.Hide();
             }
             else
