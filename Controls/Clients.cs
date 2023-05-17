@@ -1,4 +1,5 @@
-﻿using HotelManagementSystem.Forms;
+﻿using HotelManagementSystem.Controls;
+using HotelManagementSystem.Forms;
 using MySql.Data.MySqlClient;
 using System;
 using System.Data;
@@ -57,7 +58,10 @@ namespace HotelManagementSystem
         private void tsbInsertClient_Click(object sender, EventArgs e)
         {
             NewClient newClient = new NewClient();
-            newClient.StartPosition = FormStartPosition.CenterScreen;
+            newClient.TopLevel = false;
+            newClient.Dock = DockStyle.Fill;
+
+            bottomPanel.Controls.Add(newClient);
             newClient.Show();
         }
 
@@ -108,36 +112,21 @@ namespace HotelManagementSystem
 
         private void tsbEdit_Click(object sender, EventArgs e)
         {
-            dgvClients.ReadOnly = false;
-            dgvClients.SelectionMode = DataGridViewSelectionMode.CellSelect;
-
-            saveToolStripMenuItem.Enabled = true;
-            cancelToolStripMenuItem.Enabled = true;
-        }
-
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
-        {
             string clientID = dgvClients.SelectedCells[0].Value.ToString();
-            string newFirstName = dgvClients.SelectedCells[1].Value.ToString();
-            string newLastName = dgvClients.SelectedCells[2].Value.ToString();
-            string newPhoneNumber = dgvClients.SelectedCells[3].Value.ToString();
-            string newEmail = dgvClients.SelectedCells[4].Value.ToString();
-            string newDateOfBirth = dgvClients.SelectedCells[5].Value.ToString();
+            string firstName = dgvClients.SelectedCells[1].Value.ToString();
+            string lastName = dgvClients.SelectedCells[2].Value.ToString();
+            string email = dgvClients.SelectedCells[3].Value.ToString();
+            string phoneNumber = dgvClients.SelectedCells[4].Value.ToString();
+            string dateOfBirth = dgvClients.SelectedCells[5].Value.ToString();
 
-            string message = $"Os seguintes dados de cliente vão ser alterados: " +
-                $"\nPrimeiro Nome de '{currentFirstName}' para '{newFirstName}'";
-            string caption = "ATUALIZAR DADOS DE CLIENTE";
+            EditClient editClient = new EditClient(clientID, firstName, lastName, email, phoneNumber, dateOfBirth);
+            editClient.TopLevel = false;
+            editClient.Dock = DockStyle.Fill;
 
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result;
+            bottomPanel.Controls.Add(editClient);
 
-            result = MessageBox.Show(caption, message, buttons);
+            editClient.Show();
         }
 
-        private void dgvClients_SelectionChanged(object sender, EventArgs e)
-        {
-
-            
-        }
     }
 }

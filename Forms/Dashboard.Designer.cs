@@ -161,7 +161,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 304);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 252);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
             // radioButton1
