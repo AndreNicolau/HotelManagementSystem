@@ -45,7 +45,7 @@
             this.dgvRooms.RowHeadersWidth = 51;
             this.dgvRooms.RowTemplate.Height = 24;
             this.dgvRooms.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRooms.Size = new System.Drawing.Size(812, 260);
+            this.dgvRooms.Size = new System.Drawing.Size(1000, 250);
             this.dgvRooms.TabIndex = 0;
             // 
             // Rooms
@@ -54,7 +54,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvRooms);
             this.Name = "Rooms";
-            this.Size = new System.Drawing.Size(812, 577);
+            this.Size = new System.Drawing.Size(1000, 500);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).EndInit();
             this.ResumeLayout(false);
 

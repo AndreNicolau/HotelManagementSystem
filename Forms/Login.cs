@@ -51,15 +51,17 @@ namespace HotelManagementSystem
                 {
                     MessageBox.Show("Utilizador não encontrado");
                 }
-                else if (password != usersDataTable.Rows[0][4].ToString())
+                else if (password != usersDataTable.Rows[0][2].ToString())
                 {
                     MessageBox.Show("Password errada!");
                 }
                 else
                 {
-                    firstName = usersDataTable.Rows[0][1].ToString();
-                    lastName = usersDataTable.Rows[0][2].ToString();
+                    
+                    firstName = usersDataTable.Rows[0][3].ToString();
+                    lastName = usersDataTable.Rows[0][4].ToString();
                     group = usersDataTable.Rows[0][5].ToString();
+                    
                     userInfo = $"{firstName} {lastName} ({username} - {group})";
                     Dashboard dashboard = new Dashboard(userInfo, group);
                     dashboard.ShowDialog();
