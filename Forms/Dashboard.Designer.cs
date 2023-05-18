@@ -35,34 +35,36 @@
             this.rdoEmployees = new System.Windows.Forms.RadioButton();
             this.rdoUsers = new System.Windows.Forms.RadioButton();
             this.leftPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btnExit = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.leftPanel.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblUsername
             // 
+            this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.Color.Black;
-            this.lblUsername.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(0, 618);
+            this.lblUsername.Location = new System.Drawing.Point(4, 531);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(99, 25);
+            this.lblUsername.Size = new System.Drawing.Size(83, 20);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "username";
             // 
             // rdoClients
             // 
             this.rdoClients.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoClients.BackColor = System.Drawing.Color.White;
-            this.rdoClients.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rdoClients.FlatAppearance.BorderSize = 0;
+            this.rdoClients.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.rdoClients.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.rdoClients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoClients.ForeColor = System.Drawing.Color.Black;
-            this.rdoClients.Location = new System.Drawing.Point(0, 70);
+            this.rdoClients.ForeColor = System.Drawing.Color.White;
+            this.rdoClients.Location = new System.Drawing.Point(0, 89);
             this.rdoClients.Margin = new System.Windows.Forms.Padding(0);
             this.rdoClients.Name = "rdoClients";
             this.rdoClients.Size = new System.Drawing.Size(200, 35);
@@ -75,11 +77,12 @@
             // rdoReservations
             // 
             this.rdoReservations.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoReservations.BackColor = System.Drawing.Color.White;
-            this.rdoReservations.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rdoReservations.FlatAppearance.BorderSize = 0;
+            this.rdoReservations.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.rdoReservations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.rdoReservations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoReservations.ForeColor = System.Drawing.Color.Black;
-            this.rdoReservations.Location = new System.Drawing.Point(0, 175);
+            this.rdoReservations.ForeColor = System.Drawing.Color.White;
+            this.rdoReservations.Location = new System.Drawing.Point(0, 194);
             this.rdoReservations.Margin = new System.Windows.Forms.Padding(0);
             this.rdoReservations.Name = "rdoReservations";
             this.rdoReservations.Size = new System.Drawing.Size(200, 35);
@@ -92,11 +95,12 @@
             // rdoRooms
             // 
             this.rdoRooms.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoRooms.BackColor = System.Drawing.Color.White;
-            this.rdoRooms.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rdoRooms.FlatAppearance.BorderSize = 0;
+            this.rdoRooms.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.rdoRooms.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.rdoRooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoRooms.ForeColor = System.Drawing.Color.Black;
-            this.rdoRooms.Location = new System.Drawing.Point(0, 105);
+            this.rdoRooms.ForeColor = System.Drawing.Color.White;
+            this.rdoRooms.Location = new System.Drawing.Point(0, 124);
             this.rdoRooms.Margin = new System.Windows.Forms.Padding(0);
             this.rdoRooms.Name = "rdoRooms";
             this.rdoRooms.Size = new System.Drawing.Size(200, 35);
@@ -109,11 +113,12 @@
             // rdoEmployees
             // 
             this.rdoEmployees.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoEmployees.BackColor = System.Drawing.Color.White;
-            this.rdoEmployees.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rdoEmployees.FlatAppearance.BorderSize = 0;
+            this.rdoEmployees.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.rdoEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.rdoEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoEmployees.ForeColor = System.Drawing.Color.Black;
-            this.rdoEmployees.Location = new System.Drawing.Point(0, 35);
+            this.rdoEmployees.ForeColor = System.Drawing.Color.White;
+            this.rdoEmployees.Location = new System.Drawing.Point(0, 54);
             this.rdoEmployees.Margin = new System.Windows.Forms.Padding(0);
             this.rdoEmployees.Name = "rdoEmployees";
             this.rdoEmployees.Size = new System.Drawing.Size(200, 35);
@@ -126,11 +131,12 @@
             // rdoUsers
             // 
             this.rdoUsers.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoUsers.BackColor = System.Drawing.Color.White;
-            this.rdoUsers.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rdoUsers.FlatAppearance.BorderSize = 0;
+            this.rdoUsers.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.rdoUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.rdoUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoUsers.ForeColor = System.Drawing.Color.Black;
-            this.rdoUsers.Location = new System.Drawing.Point(0, 140);
+            this.rdoUsers.ForeColor = System.Drawing.Color.White;
+            this.rdoUsers.Location = new System.Drawing.Point(0, 159);
             this.rdoUsers.Margin = new System.Windows.Forms.Padding(0);
             this.rdoUsers.Name = "rdoUsers";
             this.rdoUsers.Size = new System.Drawing.Size(200, 35);
@@ -142,72 +148,78 @@
             // 
             // leftPanel
             // 
-            this.leftPanel.Controls.Add(this.flowLayoutPanel1);
+            this.leftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.leftPanel.Controls.Add(this.label1);
+            this.leftPanel.Controls.Add(this.rdoEmployees);
+            this.leftPanel.Controls.Add(this.btnExit);
+            this.leftPanel.Controls.Add(this.rdoClients);
+            this.leftPanel.Controls.Add(this.rdoRooms);
             this.leftPanel.Controls.Add(this.lblUsername);
+            this.leftPanel.Controls.Add(this.rdoUsers);
+            this.leftPanel.Controls.Add(this.rdoReservations);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftPanel.Location = new System.Drawing.Point(0, 0);
+            this.leftPanel.Margin = new System.Windows.Forms.Padding(0);
             this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(200, 643);
+            this.leftPanel.Size = new System.Drawing.Size(200, 600);
             this.leftPanel.TabIndex = 7;
             // 
-            // flowLayoutPanel1
+            // btnExit
             // 
-            this.flowLayoutPanel1.Controls.Add(this.radioButton1);
-            this.flowLayoutPanel1.Controls.Add(this.rdoEmployees);
-            this.flowLayoutPanel1.Controls.Add(this.rdoClients);
-            this.flowLayoutPanel1.Controls.Add(this.rdoRooms);
-            this.flowLayoutPanel1.Controls.Add(this.rdoUsers);
-            this.flowLayoutPanel1.Controls.Add(this.rdoReservations);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 252);
-            this.flowLayoutPanel1.TabIndex = 8;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton1.BackColor = System.Drawing.Color.White;
-            this.radioButton1.Checked = true;
-            this.radioButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton1.ForeColor = System.Drawing.Color.Black;
-            this.radioButton1.Location = new System.Drawing.Point(0, 0);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(200, 35);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Dashboard";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
-            this.radioButton1.MouseHover += new System.EventHandler(this.RadioButton_CheckedChanged);
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(0, 551);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(200, 35);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.leftPanel);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(200, 0);
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1038, 643);
+            this.mainPanel.Size = new System.Drawing.Size(1200, 600);
             this.mainPanel.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 35);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hotel Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1238, 643);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Controls.Add(this.mainPanel);
-            this.Controls.Add(this.leftPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.leftPanel.ResumeLayout(false);
             this.leftPanel.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.mainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -222,7 +234,7 @@
         private System.Windows.Forms.RadioButton rdoUsers;
         private System.Windows.Forms.Panel leftPanel;
         private System.Windows.Forms.Panel mainPanel;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label1;
     }
 }

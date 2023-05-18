@@ -34,6 +34,7 @@
             this.ChbShowPassword = new System.Windows.Forms.CheckBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUser
@@ -51,11 +52,12 @@
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.BackColor = System.Drawing.Color.White;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.Location = new System.Drawing.Point(171, 152);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(216, 34);
+            this.txtPassword.Size = new System.Drawing.Size(216, 27);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.Text = "AndreNicolau";
             this.txtPassword.UseSystemPasswordChar = true;
@@ -63,8 +65,10 @@
             // btnLogin
             // 
             this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLogin.BackColor = System.Drawing.Color.White;
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(171, 241);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnLogin.Name = "btnLogin";
@@ -78,10 +82,12 @@
             // 
             this.ChbShowPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ChbShowPassword.AutoSize = true;
+            this.ChbShowPassword.FlatAppearance.BorderSize = 0;
+            this.ChbShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChbShowPassword.Location = new System.Drawing.Point(171, 197);
             this.ChbShowPassword.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.ChbShowPassword.Name = "ChbShowPassword";
-            this.ChbShowPassword.Size = new System.Drawing.Size(209, 33);
+            this.ChbShowPassword.Size = new System.Drawing.Size(205, 33);
             this.ChbShowPassword.TabIndex = 3;
             this.ChbShowPassword.Text = "Show Password";
             this.ChbShowPassword.UseVisualStyleBackColor = true;
@@ -102,19 +108,37 @@
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.BackColor = System.Drawing.Color.White;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.Location = new System.Drawing.Point(171, 80);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(216, 34);
+            this.txtUsername.Size = new System.Drawing.Size(216, 27);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.Text = "andre.nicolau";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(171, 298);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(214, 45);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(559, 395);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblPassword);
@@ -123,6 +147,7 @@
             this.Controls.Add(this.btnLogin);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -141,6 +166,7 @@
         private System.Windows.Forms.CheckBox ChbShowPassword;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

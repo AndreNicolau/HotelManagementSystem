@@ -11,6 +11,8 @@ namespace HotelManagementSystem
         public Login()
         {
             InitializeComponent();
+
+            
         }
 
         private void chbShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -78,6 +80,11 @@ namespace HotelManagementSystem
 
                 result = MessageBox.Show(message, caption, buttons);
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

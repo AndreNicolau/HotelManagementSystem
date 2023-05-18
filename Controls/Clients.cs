@@ -65,15 +65,6 @@ namespace HotelManagementSystem
             newClient.Show();
         }
 
-        private void Clients_MouseHover(object sender, EventArgs e)
-        {
-            LoadClients();
-        }
-
-        private void dgvClients_MouseHover(object sender, EventArgs e)
-        {
-            LoadClients();
-        }
 
         private void tsbDeleteClient_Click(object sender, EventArgs e)
         {

@@ -28,20 +28,7 @@ namespace HotelManagementSystem
 
         private void RadioButtonChecked()
         {
-            foreach (RadioButton radioButton in flowLayoutPanel1.Controls)
-            {
-                if (radioButton.Checked)
-                {
-                    radioButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-                    radioButton.BackColor = System.Drawing.Color.Black;
-                    radioButton.ForeColor = System.Drawing.Color.White;
-                }
-                else
-                {
-                    radioButton.BackColor = System.Drawing.Color.White;
-                    radioButton.ForeColor = System.Drawing.Color.Black;
-                }
-            }
+            
         }
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
@@ -62,6 +49,14 @@ namespace HotelManagementSystem
             {
                 rooms.BringToFront();
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            
+            Close();
         }
     }
 }
