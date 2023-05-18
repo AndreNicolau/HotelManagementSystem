@@ -71,22 +71,22 @@ namespace HotelManagementSystem.Forms
         {
             if (txtFirstname.Text == "")
             {
-                MessageBox.Show("É necessário inserir o primeiro nome do cliente");
+                MessageBox.Show("You must enter the customer's first name.");
                 return false;
             }
             else if (txtLastName.Text == "")
             {
-                MessageBox.Show("É necessário inserir o último nome do cliente");
+                MessageBox.Show("You must enter the customer's last name.");
                 return false;
             }
             else if (txtPhoneNumber.Text == "" && txtEmail.Text == "")
             {
-                MessageBox.Show("É necessário pelo menus uma forma de contacto, email ou número de telemóvel");
+                MessageBox.Show("At least one form of contact, email or mobile number is required.");
                 return false;
             }
             else if (DateTime.Now.Year - dtpDateOfBirth.Value.Year < 18)
             {
-                MessageBox.Show("Não é possível registar clientes menores de idade!");
+                MessageBox.Show("It is not possible to register underage customers!");
                 return false;
             }
 
@@ -110,8 +110,8 @@ namespace HotelManagementSystem.Forms
                 insertCommand.ExecuteNonQuery();
                 connection.Close();
 
-                message = "Cliente inserido com sucesso!\n Deseja inserir um novo cliente?";
-                caption = "Novo cliente";
+                message = "Customer inserted successfully!\n Do you want to insert a new customer?";
+                caption = "New customer";
 
                 buttons = MessageBoxButtons.YesNo;
                 result = MessageBox.Show(message, caption, buttons);

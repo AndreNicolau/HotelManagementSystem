@@ -16,6 +16,8 @@ namespace HotelManagementSystem
         string currentEmail;
         string currentDateOfBirth;
 
+        int counter;
+
         public Clients()
         {
             InitializeComponent();
@@ -119,5 +121,13 @@ namespace HotelManagementSystem
             editClient.Show();
         }
 
+        private void Clients_Enter(object sender, EventArgs e)
+        {
+            LoadClients();
+
+            counter++;
+
+            toolStripLabel1.Text = $"Dados atualizados {counter.ToString()} vezes.";
+        }
     }
 }

@@ -9,8 +9,8 @@ namespace HotelManagementSystem.Controls
 
         public EditClient(string clientID, string currentFirstName,
 string currentLastName,
-string currentEmail,
 string currentPhoneNumber,
+string currentEmail,
 string currentDateOfBirth)
         {
             InitializeComponent();
@@ -19,8 +19,8 @@ string currentDateOfBirth)
             lblClientID.Text = clientID;
             txtFirstname.Text = currentFirstName;
             txtLastName.Text = currentLastName;
-            txtEmail.Text = currentEmail;
             txtPhoneNumber.Text = currentPhoneNumber;
+            txtEmail.Text = currentEmail;
             dtpDateOfBirth.Value = DateTime.Parse(currentDateOfBirth);
         }
 

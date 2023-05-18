@@ -85,17 +85,13 @@
             this.dgvClients.Name = "dgvClients";
             this.dgvClients.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Empty;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Empty;
             this.dgvClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvClients.RowHeadersVisible = false;
             this.dgvClients.RowHeadersWidth = 51;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvClients.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvClients.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvClients.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Empty;
-            this.dgvClients.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvClients.RowTemplate.Height = 24;
             this.dgvClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClients.Size = new System.Drawing.Size(1125, 237);
@@ -188,6 +184,7 @@
             this.Name = "Clients";
             this.Padding = new System.Windows.Forms.Padding(2);
             this.Size = new System.Drawing.Size(1125, 539);
+            this.Enter += new System.EventHandler(this.Clients_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
