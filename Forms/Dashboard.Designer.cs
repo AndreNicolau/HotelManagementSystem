@@ -29,212 +29,225 @@
         private void InitializeComponent()
         {
             this.lblUsername = new System.Windows.Forms.Label();
-            this.rdoClients = new System.Windows.Forms.RadioButton();
-            this.rdoReservations = new System.Windows.Forms.RadioButton();
-            this.rdoRooms = new System.Windows.Forms.RadioButton();
-            this.rdoEmployees = new System.Windows.Forms.RadioButton();
-            this.rdoUsers = new System.Windows.Forms.RadioButton();
-            this.leftPanel = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
-            this.mainPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.leftPanel.SuspendLayout();
-            this.mainPanel.SuspendLayout();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.employeesTab = new System.Windows.Forms.TabPage();
+            this.dgvEmployees = new System.Windows.Forms.DataGridView();
+            this.clientsTab = new System.Windows.Forms.TabPage();
+            this.dgvClients = new System.Windows.Forms.DataGridView();
+            this.roomsTab = new System.Windows.Forms.TabPage();
+            this.dgvRooms = new System.Windows.Forms.DataGridView();
+            this.reservationsTab = new System.Windows.Forms.TabPage();
+            this.dgvReservations = new System.Windows.Forms.DataGridView();
+            this.tabControl.SuspendLayout();
+            this.employeesTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
+            this.clientsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).BeginInit();
+            this.roomsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).BeginInit();
+            this.reservationsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUsername
             // 
-            this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(4, 531);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Location = new System.Drawing.Point(8, 39);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(1);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(83, 20);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "username";
             // 
-            // rdoClients
-            // 
-            this.rdoClients.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoClients.FlatAppearance.BorderSize = 0;
-            this.rdoClients.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoClients.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoClients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoClients.ForeColor = System.Drawing.Color.White;
-            this.rdoClients.Location = new System.Drawing.Point(0, 89);
-            this.rdoClients.Margin = new System.Windows.Forms.Padding(0);
-            this.rdoClients.Name = "rdoClients";
-            this.rdoClients.Size = new System.Drawing.Size(200, 35);
-            this.rdoClients.TabIndex = 3;
-            this.rdoClients.Text = "Clientes";
-            this.rdoClients.UseVisualStyleBackColor = false;
-            this.rdoClients.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
-            this.rdoClients.MouseHover += new System.EventHandler(this.RadioButton_CheckedChanged);
-            // 
-            // rdoReservations
-            // 
-            this.rdoReservations.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoReservations.FlatAppearance.BorderSize = 0;
-            this.rdoReservations.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoReservations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoReservations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoReservations.ForeColor = System.Drawing.Color.White;
-            this.rdoReservations.Location = new System.Drawing.Point(0, 194);
-            this.rdoReservations.Margin = new System.Windows.Forms.Padding(0);
-            this.rdoReservations.Name = "rdoReservations";
-            this.rdoReservations.Size = new System.Drawing.Size(200, 35);
-            this.rdoReservations.TabIndex = 2;
-            this.rdoReservations.Text = "Reservas";
-            this.rdoReservations.UseVisualStyleBackColor = false;
-            this.rdoReservations.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
-            this.rdoReservations.MouseHover += new System.EventHandler(this.RadioButton_CheckedChanged);
-            // 
-            // rdoRooms
-            // 
-            this.rdoRooms.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoRooms.FlatAppearance.BorderSize = 0;
-            this.rdoRooms.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoRooms.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoRooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoRooms.ForeColor = System.Drawing.Color.White;
-            this.rdoRooms.Location = new System.Drawing.Point(0, 124);
-            this.rdoRooms.Margin = new System.Windows.Forms.Padding(0);
-            this.rdoRooms.Name = "rdoRooms";
-            this.rdoRooms.Size = new System.Drawing.Size(200, 35);
-            this.rdoRooms.TabIndex = 4;
-            this.rdoRooms.Text = "Quartos";
-            this.rdoRooms.UseVisualStyleBackColor = false;
-            this.rdoRooms.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
-            this.rdoRooms.MouseHover += new System.EventHandler(this.RadioButton_CheckedChanged);
-            // 
-            // rdoEmployees
-            // 
-            this.rdoEmployees.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoEmployees.FlatAppearance.BorderSize = 0;
-            this.rdoEmployees.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoEmployees.ForeColor = System.Drawing.Color.White;
-            this.rdoEmployees.Location = new System.Drawing.Point(0, 54);
-            this.rdoEmployees.Margin = new System.Windows.Forms.Padding(0);
-            this.rdoEmployees.Name = "rdoEmployees";
-            this.rdoEmployees.Size = new System.Drawing.Size(200, 35);
-            this.rdoEmployees.TabIndex = 5;
-            this.rdoEmployees.Text = "Empregados";
-            this.rdoEmployees.UseVisualStyleBackColor = false;
-            this.rdoEmployees.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
-            this.rdoEmployees.MouseHover += new System.EventHandler(this.RadioButton_CheckedChanged);
-            // 
-            // rdoUsers
-            // 
-            this.rdoUsers.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoUsers.FlatAppearance.BorderSize = 0;
-            this.rdoUsers.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.rdoUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoUsers.ForeColor = System.Drawing.Color.White;
-            this.rdoUsers.Location = new System.Drawing.Point(0, 159);
-            this.rdoUsers.Margin = new System.Windows.Forms.Padding(0);
-            this.rdoUsers.Name = "rdoUsers";
-            this.rdoUsers.Size = new System.Drawing.Size(200, 35);
-            this.rdoUsers.TabIndex = 6;
-            this.rdoUsers.Text = "Utilizadores";
-            this.rdoUsers.UseVisualStyleBackColor = false;
-            this.rdoUsers.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
-            this.rdoUsers.MouseHover += new System.EventHandler(this.RadioButton_CheckedChanged);
-            // 
-            // leftPanel
-            // 
-            this.leftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.leftPanel.Controls.Add(this.label1);
-            this.leftPanel.Controls.Add(this.rdoEmployees);
-            this.leftPanel.Controls.Add(this.btnExit);
-            this.leftPanel.Controls.Add(this.rdoClients);
-            this.leftPanel.Controls.Add(this.rdoRooms);
-            this.leftPanel.Controls.Add(this.lblUsername);
-            this.leftPanel.Controls.Add(this.rdoUsers);
-            this.leftPanel.Controls.Add(this.rdoReservations);
-            this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.leftPanel.Location = new System.Drawing.Point(0, 0);
-            this.leftPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(200, 600);
-            this.leftPanel.TabIndex = 7;
-            // 
             // btnExit
             // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(0, 551);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.btnExit.Location = new System.Drawing.Point(939, 8);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(1);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(200, 35);
+            this.btnExit.Size = new System.Drawing.Size(52, 29);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // mainPanel
-            // 
-            this.mainPanel.Controls.Add(this.leftPanel);
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(0, 0);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1200, 600);
-            this.mainPanel.TabIndex = 8;
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 35);
+            this.label1.Size = new System.Drawing.Size(167, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hotel Name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tabControl
+            // 
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl.Controls.Add(this.employeesTab);
+            this.tabControl.Controls.Add(this.clientsTab);
+            this.tabControl.Controls.Add(this.roomsTab);
+            this.tabControl.Controls.Add(this.reservationsTab);
+            this.tabControl.Location = new System.Drawing.Point(0, 75);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1000, 429);
+            this.tabControl.TabIndex = 9;
+            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
+            // 
+            // employeesTab
+            // 
+            this.employeesTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.employeesTab.Controls.Add(this.dgvEmployees);
+            this.employeesTab.ForeColor = System.Drawing.Color.White;
+            this.employeesTab.Location = new System.Drawing.Point(4, 30);
+            this.employeesTab.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.employeesTab.Name = "employeesTab";
+            this.employeesTab.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.employeesTab.Size = new System.Drawing.Size(992, 395);
+            this.employeesTab.TabIndex = 0;
+            this.employeesTab.Text = "Employees";
+            // 
+            // dgvEmployees
+            // 
+            this.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployees.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvEmployees.Location = new System.Drawing.Point(2, 3);
+            this.dgvEmployees.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvEmployees.Name = "dgvEmployees";
+            this.dgvEmployees.RowHeadersWidth = 51;
+            this.dgvEmployees.RowTemplate.Height = 24;
+            this.dgvEmployees.Size = new System.Drawing.Size(988, 126);
+            this.dgvEmployees.TabIndex = 0;
+            // 
+            // clientsTab
+            // 
+            this.clientsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.clientsTab.Controls.Add(this.dgvClients);
+            this.clientsTab.Location = new System.Drawing.Point(4, 34);
+            this.clientsTab.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.clientsTab.Name = "clientsTab";
+            this.clientsTab.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.clientsTab.Size = new System.Drawing.Size(992, 391);
+            this.clientsTab.TabIndex = 1;
+            this.clientsTab.Text = "Clients";
+            // 
+            // dgvClients
+            // 
+            this.dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClients.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvClients.Location = new System.Drawing.Point(2, 3);
+            this.dgvClients.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvClients.Name = "dgvClients";
+            this.dgvClients.RowHeadersWidth = 51;
+            this.dgvClients.RowTemplate.Height = 24;
+            this.dgvClients.Size = new System.Drawing.Size(988, 126);
+            this.dgvClients.TabIndex = 0;
+            // 
+            // roomsTab
+            // 
+            this.roomsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.roomsTab.Controls.Add(this.dgvRooms);
+            this.roomsTab.Location = new System.Drawing.Point(4, 34);
+            this.roomsTab.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.roomsTab.Name = "roomsTab";
+            this.roomsTab.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.roomsTab.Size = new System.Drawing.Size(992, 391);
+            this.roomsTab.TabIndex = 2;
+            this.roomsTab.Text = "Rooms";
+            // 
+            // dgvRooms
+            // 
+            this.dgvRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRooms.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvRooms.Location = new System.Drawing.Point(2, 3);
+            this.dgvRooms.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvRooms.Name = "dgvRooms";
+            this.dgvRooms.RowHeadersWidth = 51;
+            this.dgvRooms.RowTemplate.Height = 24;
+            this.dgvRooms.Size = new System.Drawing.Size(988, 126);
+            this.dgvRooms.TabIndex = 0;
+            // 
+            // reservationsTab
+            // 
+            this.reservationsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.reservationsTab.Controls.Add(this.dgvReservations);
+            this.reservationsTab.Location = new System.Drawing.Point(4, 34);
+            this.reservationsTab.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.reservationsTab.Name = "reservationsTab";
+            this.reservationsTab.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.reservationsTab.Size = new System.Drawing.Size(992, 391);
+            this.reservationsTab.TabIndex = 3;
+            this.reservationsTab.Text = "Reservations";
+            // 
+            // dgvReservations
+            // 
+            this.dgvReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReservations.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvReservations.Location = new System.Drawing.Point(2, 3);
+            this.dgvReservations.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvReservations.Name = "dgvReservations";
+            this.dgvReservations.RowHeadersWidth = 51;
+            this.dgvReservations.RowTemplate.Height = 24;
+            this.dgvReservations.Size = new System.Drawing.Size(988, 126);
+            this.dgvReservations.TabIndex = 0;
+            // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1200, 600);
-            this.Controls.Add(this.mainPanel);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientSize = new System.Drawing.Size(1000, 504);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.tabControl);
+            this.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.leftPanel.ResumeLayout(false);
-            this.leftPanel.PerformLayout();
-            this.mainPanel.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
+            this.employeesTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
+            this.clientsTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();
+            this.roomsTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).EndInit();
+            this.reservationsTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.RadioButton rdoClients;
-        private System.Windows.Forms.RadioButton rdoReservations;
-        private System.Windows.Forms.RadioButton rdoRooms;
-        private System.Windows.Forms.RadioButton rdoEmployees;
-        private System.Windows.Forms.RadioButton rdoUsers;
-        private System.Windows.Forms.Panel leftPanel;
-        private System.Windows.Forms.Panel mainPanel;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage employeesTab;
+        private System.Windows.Forms.TabPage clientsTab;
+        private System.Windows.Forms.TabPage roomsTab;
+        private System.Windows.Forms.TabPage reservationsTab;
+        private System.Windows.Forms.DataGridView dgvClients;
+        private System.Windows.Forms.DataGridView dgvEmployees;
+        private System.Windows.Forms.DataGridView dgvRooms;
+        private System.Windows.Forms.DataGridView dgvReservations;
     }
 }

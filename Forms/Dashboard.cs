@@ -17,10 +17,6 @@ namespace HotelManagementSystem
 
             lblUsername.Text = userInfo;
 
-            mainPanel.Controls.Add(reservations);
-            mainPanel.Controls.Add(clients);
-            mainPanel.Controls.Add(rooms);
-
             reservations.Dock = DockStyle.Fill;
             clients.Dock = DockStyle.Fill;
             rooms.Dock = DockStyle.Fill;
@@ -28,35 +24,34 @@ namespace HotelManagementSystem
 
         private void RadioButtonChecked()
         {
-            
+
         }
 
-        private void RadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            RadioButtonChecked();
-
-            if (rdoReservations.Checked)
-            {
-                reservations.BringToFront();
-            }
-
-            if (rdoClients.Checked)
-            {
-                clients.BringToFront();
-            }
-
-            if (rdoRooms.Checked)
-            {
-                rooms.BringToFront();
-            }
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Show();
-            
+
             Close();
+        }
+
+        private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl.SelectedTab == employeesTab)
+            {
+
+            }
+
+            if (tabControl.SelectedTab == clientsTab)
+            {
+
+            }
+
+            if (tabControl.SelectedTab == roomsTab)
+            {
+
+            }
         }
     }
 }
